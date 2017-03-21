@@ -3,54 +3,283 @@
 }
 
 body {
+  -webkit-text-size-adjust: auto;
   background-color: #242424;
   font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
-.section {
-  width: 100%;
-}
-
-.section .hero {
+.hero {
   position: relative;
-  margin: 0 auto;
-  width: 99%;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
   min-height: 568px;
   background: #242424;
-  background-image: url('craig - hero.jpeg');
+  background-image: url('./images/craig - hero.jpeg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.section .hero h1 {
+.hero h1 {
+  width: 100vw;
   color: white;
-  position: absolute;
-  /*top: -1%;*/
-  font-size: 30px;
-  left: 15%;
+  position: relative;
+  font-size: 40px;
+  text-align: center;
 
 }
 
-.section .hero h1 span {
+.hero h1 span {
   color: #8A6353;
 }
 
-.section .box {
-  /*padding: 20px;*/
-  color: #fff;
-  width: 75%;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+.boxtop {
+
+  width: 125vw;
+  position: relative;
   transform: rotate(-7deg);
+  background-color: #8A6353;
+  left: 15%;
+  top: 45%;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
   font-size: 18px;
+}
+
+.boxbottom {
+  width: 85vw;
+  position: relative;
+  transform: rotate(-7deg);
+  background-color: #8A6353;
+  left: 19%;
+  top: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #888;
+
+
+}
+.boxtop p {
+  font-size: 20px;
+  width: 85%;
+  color: #fff;
+
+}
+.boxbottom p {
+  font-size: 16px;
+  width: 85%;
+  color: #fff;
 
 }
 
-.section .box p {
-  background-color: #8A6353;
-  padding: 20px;
+/* Skills Section*/
+.skills {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 568px;
+  background: #242424;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills h1 {
+  width: 100vw;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+.skills figure {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.skills figure img {
+  height: 200px;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.skills figcaption {
+  color: #fff;
+  text-align: center;
+    padding-top: 10px;
+    font-size: 22px;
+}
+.skills figcaption span {
+
+  font-size: 24px;
+
+}
+
+/*.skills img {
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+/*project section */
+.project {
+  position: relative;
+}
+
+.project .background{
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background: #8A6353;
+  background-image: url('./images/sandstone-the-wave-rock-nature-50570.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: opacity(25%);
+}
+
+.project h1 {
+  width: 100vw;
+  color: white;
+  /*position: relative;*/
+  /*font-size: 30px;*/
+  text-align: center;
+  font-size: 48px;
+}
+
+.project figure {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+    text-align: center;
+}
+
+.project figure img {
+  height: 200px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project figcaption span {
+  font-size: 30px;
+
+}
+
+.project figcaption {
+  color: #fff;
+  text-align: center;
+    padding-top: 10px;
+}
+
+/*about section */
+
+.about {
+  position: relative;
+}
+
+.about .background{
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 568px;
+  background: #002F48;
+  background-image: url('./images/craig-blue.jpg');
+  background-position: left bottom;
+  filter: opacity(25%);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  z-index: -1;
+}
+.about h1 {
+  width: 100vw;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  z-index: 1;
+}
+.about p {
   font-size: 16px;
-  /*border: 4px solid #fff;*/
+  width: 95%;
+  color: #fff;
+  text-align: right;
+}
+
+/*contact section */
+.contact {
+  position: absolute;
+}
+.contact .background{
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  min-height: 568px;
+  background: #242424;
+  background-image: url('./images/pexels-photo-346593.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: opacity(25%);
+}
+
+.contact h1 {
+  width: 100vw;
+  color: #fff;
+  /*position: relative;*/
+  /*font-size: 30px;*/
+  text-align: center;
+  font-size: 48px;
+}
+label {
+color: #fff;
+font-weight: bold;
+display: block;
+/*width: 100vw;*/
+text-align: center;
+padding: 12px;
+}
+
+input[type=text], select {
+  position: relative;
+    width: 80vw;
+    left: 10vw;
+    padding: 12px 20px;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+
+}
+
+input[type=submit] {
+  position: relative;
+    width: 80vw;
+    left: 10vw;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
