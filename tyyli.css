@@ -88,30 +88,44 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.skills h1 {
+.skills > h1 {
   width: 100vw;
   color: white;
   text-align: center;
   font-size: 48px;
-  top: 2%;
+
+  /*top: 2%;*/
 
 }
 
 .skills figure {
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  max-width: 350px;
+  /*margin-left: auto;
+  margin-right: auto;*/
   padding-bottom: 20px;
 }
 
+.skills figure figcaption h1 {
+  font-size: 40px;
+  color: #8A6353;
+}
+
+.skills p, blockquote {
+  /*color: #8A6353;*/
+}
+
 .skills figure img {
-  height: 200px;
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  /*height: 200px;*/
+  /*width: 100vw;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
 
 
@@ -119,10 +133,10 @@ body {
 .skills figcaption {
   color: #fff;
   text-align: center;
-    padding-top: 10px;
-    font-size: 22px;
-    margin-left: 9%;
-    margin-right: 9%;
+  padding-top: 10px;
+  font-size: 22px;
+  margin-left: 9%;
+  margin-right: 9%;
 }
 .skills figcaption span {
 
@@ -143,7 +157,6 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #8A6353;
   background-image: url('./images/sandstone-the-wave-rock-nature-50570.jpg');
   background-position: top;
   background-repeat: no-repeat;
@@ -152,8 +165,8 @@ body {
   filter: opacity(25%);
 }
 
-.project h1 {
-  position: relative;
+.project > h1 {
+  /*position: relative;*/
   width: 100vw;
   color: white;
   text-align: center;
@@ -161,27 +174,32 @@ body {
   top: 2%;
 
 }
+.project .projectwrapper{
+  min-height: 568px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .project figure {
   top: 100px;
-  width: 100vw;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
     text-align: center;
 }
 
+.project figure figcaption h1 {
+  font-size: 40px;
+  color: #D6A996;
+
+}
+
 .project figure img {
-  height: 200px;
-  /*width: 80vw;*/
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
-.project figcaption span {
-  font-size: 30px;
-
-}
 
 .project figcaption {
   color: #fff;
@@ -233,11 +251,12 @@ body {
   position: relative;
   min-height: 568px;
   float: left;
+
 }
 .contact .background{
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: #242424;
   background-image: url('./images/pexels-photo-346593.jpg');
   background-position: top;
@@ -298,252 +317,29 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-/*for screen size bigger then phone*/
-@media screen and (min-width: 600px) {
-  /*hero section*/
-.hero{
-/*background-size: 800px;*/
-}
-
-  .hero h1 {
-  font-size: 80px;
-  top: -2%;
-  }
-
-  .boxtop {
-    left: 33%;
-    top: 30%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .boxbottom {
-
-    left: 35%;
-    top: 35%;
-    padding-left: 5px;
-    padding-right: 5px;
-
-
-  }
-
-  .boxtop p {
-    font-size: 30px;
-    /*width: 85%;
-    color: #fff;*/
-
-  }
-  .boxbottom p {
-    font-size: 28px;
-    width: 70%;
-
-  }
-
-/*skills section*/
-
-
-.skills h1 {
-  font-size: 72px;
-  top: 2%;
+/*footer section*/
+.footer {
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  background: #8A6353;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
 }
 
-.skills figcaption {
-    font-size: 30px;
-}
-.skills figcaption span {
-  font-size: 34px;
-}
-
-/*project section*/
-
-.project h1 {
-  font-size: 72px;
-  top: 2%;
-}
-
-
-.project figcaption span {
-  font-size: 34px;
-}
-
-.project figcaption {
-    font-size: 30px;
-}
-
-.project figure img {
-  height: 400px;
-}
-
-/*about section*/
-
-.about .background{
-  background-size: 40%;
-}
-
-.about h1 {
-
-  font-size: 72px;
-
-}
-.about p {
-  font-size: 30px;
-  width: 60%;
-  margin-left: 35%;
+.footer .item {
+  text-align: center;
+  width: 33.33%
 
 }
 
-/*contact section */
-
-.contact h1 {
-  font-size: 72px;
-}
-
-
-label {
-color: #fff;
-font-weight: bold;
-display: block;
-/*width: 100vw;*/
-text-align: center;
-padding: 12px;
-font-size: 30px;
-}
-
-input[type=text], select {
-    padding: 12px 40px;
-    font-size: 30px;
-}
-
-input[type=submit] {
-    font-size: 30px;
-}
-
-  /*end of media screen size*/
-}
-
-/*for screen size bigger then ipad*/
-@media screen and (min-width: 940px) {
-  /*hero section*/
-.hero{
-/*background-size: 1150px;*/
-}
-
-  .hero h1 {
-  font-size: 80px;
-  /*top: -2%;*/
-  text-align: left;
-  left: 5%;
-  }
-
-  .boxtop {
-    left: 58%;
-    top: 30%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .boxbottom {
-
-    left: 60%;
-    top: 35%;
-    padding-left: 5px;
-    padding-right: 5px;
-
-
-  }
-
-  .boxtop p {
-    font-size: 30px;
-    /*width: 85%;
-    color: #fff;*/
-
-  }
-  .boxbottom p {
-    font-size: 28px;
-    width: 46%;
-
-  }
-
-/*skills section*/
-
-
-/*.skills h1 {
-  font-size: 72px;
-  top: 2%;
-
-}
-
-.skills figcaption {
-    font-size: 30px;
-}
-.skills figcaption span {
-  font-size: 34px;
-}*/
-
-/*project section*/
-
-.project h1 {
-  font-size: 72px;
-  top: 2%;
-}
-
-
-.project figcaption span {
-  font-size: 34px;
-}
-
-.project figcaption {
-    font-size: 30px;
-}
-
-.project figure img {
-  height: 400px;
-}
-
-/*about section*/
-
-.about .background{
-  background-size: 40%;
-}
-
-.about h1 {
-
-  font-size: 72px;
-
-}
-.about p {
-  font-size: 30px;
-  width: 60%;
-  margin-left: 35%;
-
-}
-
-/*contact section */
-
-.contact h1 {
-  font-size: 72px;
-}
-
-
-label {
-color: #fff;
-font-weight: bold;
-display: block;
-/*width: 100vw;*/
-text-align: center;
-padding: 12px;
-font-size: 30px;
-}
-
-input[type=text], select {
-    padding: 12px 40px;
-    font-size: 30px;
-}
-
-input[type=submit] {
-    font-size: 30px;
-}
-
-  /*end of media screen size*/
+img.resize{
+ width: 33.33%;
+ /*height: 33.33%;*/
 }
