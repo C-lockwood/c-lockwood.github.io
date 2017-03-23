@@ -1,11 +1,8 @@
-@-ms-viewport{
-  width: device-width;
-}
+
 
 body {
   -webkit-text-size-adjust: auto;
   background-color: #242424;
-  /*background-color: #fff;*/
   margin: 0px;
   font-family: 'Lato', sans-serif;
 
@@ -18,7 +15,7 @@ body {
   height: 100vh;
   min-height: 568px;
   background: #242424;
-  background-image: url('./images/craig - hero.jpeg');
+  background-image: url('./images/craig - hero.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,6 +74,8 @@ body {
   color: #fff;
 
 }
+
+
 
 /* Skills Section*/
 .skills {
@@ -145,7 +144,7 @@ body {
   width: 100%;
   height: 100%;
   background: #8A6353;
-  background-image: url('./images/sandstone-the-wave-rock-nature-50570.jpeg');
+  background-image: url('./images/sandstone-the-wave-rock-nature-50570.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,7 +173,7 @@ body {
 
 .project figure img {
   height: 200px;
-  width: 80vw;
+  /*width: 80vw;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -240,7 +239,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: #242424;
-  background-image: url('./images/pexels-photo-346593.jpeg');
+  background-image: url('./images/pexels-photo-346593.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,6 +261,7 @@ display: block;
 /*width: 100vw;*/
 text-align: center;
 padding: 12px;
+font-size: 16px;
 }
 
 input[type=text], select {
@@ -274,7 +274,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-
+  font-size: 16px;
 
 }
 
@@ -296,4 +296,254 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+/*for screen size bigger then phone*/
+@media screen and (min-width: 600px) {
+  /*hero section*/
+.hero{
+/*background-size: 800px;*/
+}
+
+  .hero h1 {
+  font-size: 80px;
+  top: -2%;
+  }
+
+  .boxtop {
+    left: 33%;
+    top: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .boxbottom {
+
+    left: 35%;
+    top: 35%;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+  }
+
+  .boxtop p {
+    font-size: 30px;
+    /*width: 85%;
+    color: #fff;*/
+
+  }
+  .boxbottom p {
+    font-size: 28px;
+    width: 70%;
+
+  }
+
+/*skills section*/
+
+
+.skills h1 {
+  font-size: 72px;
+  top: 2%;
+
+}
+
+.skills figcaption {
+    font-size: 30px;
+}
+.skills figcaption span {
+  font-size: 34px;
+}
+
+/*project section*/
+
+.project h1 {
+  font-size: 72px;
+  top: 2%;
+}
+
+
+.project figcaption span {
+  font-size: 34px;
+}
+
+.project figcaption {
+    font-size: 30px;
+}
+
+.project figure img {
+  height: 400px;
+}
+
+/*about section*/
+
+.about .background{
+  background-size: 40%;
+}
+
+.about h1 {
+
+  font-size: 72px;
+
+}
+.about p {
+  font-size: 30px;
+  width: 60%;
+  margin-left: 35%;
+
+}
+
+/*contact section */
+
+.contact h1 {
+  font-size: 72px;
+}
+
+
+label {
+color: #fff;
+font-weight: bold;
+display: block;
+/*width: 100vw;*/
+text-align: center;
+padding: 12px;
+font-size: 30px;
+}
+
+input[type=text], select {
+    padding: 12px 40px;
+    font-size: 30px;
+}
+
+input[type=submit] {
+    font-size: 30px;
+}
+
+  /*end of media screen size*/
+}
+
+/*for screen size bigger then ipad*/
+@media screen and (min-width: 940px) {
+  /*hero section*/
+.hero{
+/*background-size: 1150px;*/
+}
+
+  .hero h1 {
+  font-size: 80px;
+  /*top: -2%;*/
+  text-align: left;
+  left: 5%;
+  }
+
+  .boxtop {
+    left: 58%;
+    top: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .boxbottom {
+
+    left: 60%;
+    top: 35%;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+  }
+
+  .boxtop p {
+    font-size: 30px;
+    /*width: 85%;
+    color: #fff;*/
+
+  }
+  .boxbottom p {
+    font-size: 28px;
+    width: 46%;
+
+  }
+
+/*skills section*/
+
+
+/*.skills h1 {
+  font-size: 72px;
+  top: 2%;
+
+}
+
+.skills figcaption {
+    font-size: 30px;
+}
+.skills figcaption span {
+  font-size: 34px;
+}*/
+
+/*project section*/
+
+.project h1 {
+  font-size: 72px;
+  top: 2%;
+}
+
+
+.project figcaption span {
+  font-size: 34px;
+}
+
+.project figcaption {
+    font-size: 30px;
+}
+
+.project figure img {
+  height: 400px;
+}
+
+/*about section*/
+
+.about .background{
+  background-size: 40%;
+}
+
+.about h1 {
+
+  font-size: 72px;
+
+}
+.about p {
+  font-size: 30px;
+  width: 60%;
+  margin-left: 35%;
+
+}
+
+/*contact section */
+
+.contact h1 {
+  font-size: 72px;
+}
+
+
+label {
+color: #fff;
+font-weight: bold;
+display: block;
+/*width: 100vw;*/
+text-align: center;
+padding: 12px;
+font-size: 30px;
+}
+
+input[type=text], select {
+    padding: 12px 40px;
+    font-size: 30px;
+}
+
+input[type=submit] {
+    font-size: 30px;
+}
+
+  /*end of media screen size*/
 }
