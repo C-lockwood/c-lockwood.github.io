@@ -31,9 +31,9 @@ Taking in the knowledge of who the target audience is and what the subject is tr
 
 so with all those ideas we came up with the following design choice.
 
-<img alt="iphone 5 mockup" src="images/phone.svg">
+<img alt="iphone 5 mockup" src="images/phone.png">
 
-<img alt="iphone 5 mockup" src="images/desktop.svg">
+<img alt="desktop mockup" src="images/desktop.png">
 
 Using the adobe kuler we uploaded the hero image and got a color scheme that fits number 3 and complements our hero image.
 
