@@ -30,11 +30,10 @@ Taking in the knowledge of who the target audience is and what the subject is tr
 6. mobile friendly site so the subject can use it in his elevator pitch.
 
 so with all those ideas we came up with the following design choice.
-![iphone 5 mockup](https://c-lockwood.github.io/images/phone.svg,  "Iphone 5 mockup")
 
+<img alt="iphone 5 mockup" src="images/phone.svg">
 
-
-![desktop mockup](images/desktop.svg, "Desktop Mockup")
+<img alt="iphone 5 mockup" src="images/desktop.svg">
 
 Using the adobe kuler we uploaded the hero image and got a color scheme that fits number 3 and complements our hero image.
 
