@@ -37,7 +37,7 @@ so with all those ideas we came up with the following design choice.
 
 Using the adobe kuler we uploaded the hero image and got a color scheme that fits number 3 and complements our hero image.
 
-NOTE: this was not the first design mocked up as the first design has a more adventure / nature look to it but it fell more into the category of what the subjected liked not what the target audience would like. check out the original mockup [here](https://c-lockwood.github.io/images/first_mockup.svg).
+NOTE: this was not the first design mocked up as the first design has a more adventure / nature look to it but it fell more into the category of what the subjected liked not what the target audience would like. check out the original mockup [here](https://c-lockwood.github.io/images/first_mockup.png).
 
 ## BREAKDOWN OF MOCKUP
 ### Hero Section

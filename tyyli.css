@@ -369,14 +369,16 @@ img.resize{
 
 /*for screen size bigger then phone*/
 @media screen and (min-width: 500px) {
-
-  .hero h1 {
+  .hero {
     font-size: 80px;
+    margin: 0 auto;
+    min-height:800px;
+    /*background-size: 75%;*/
   }
 
   .boxtop {
     left: 33%;
-    top: 35%;
+    top: 36%;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -384,7 +386,7 @@ img.resize{
   .boxbottom {
 
     left: 35%;
-    top: 40%;
+    top: 38%;
     padding-left: 5px;
     padding-right: 5px;
 
@@ -472,8 +474,56 @@ img.resize{
   .hero {
     margin: 0 auto;
     max-width: 1366px;
-    min-height: 800px;
+    min-height:1024px;
     /*background-size: 75%;*/
+  }
+
+  .hero h1 {
+    text-align: left;
+    left: 5%;
+  }
+
+  .boxtop {
+    width: 1000px;
+    top: 52%;
+  }
+
+  .boxbottom {
+    top: 53%;
+    width: 1000px
+  }
+
+  .hero p {
+    width: 700px;
+    padding: 10px;
+
+  }
+
+  .project {
+    /*max-width: 1366px;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+  }
+
+  .about .about-wrapper .background{
+background-position: top left;
+    background-size: 50%;
+  }
+
+
+  /*end of @media*/
+}
+
+
+/*for screen sizes desktop and above*/
+/*@media screen and (min-width: 1200px) {
+
+
+  .hero {
+    margin: 0 auto;
+    max-width: 1366px;
+    min-height:1000px;
   }
 
   .hero h1 {
@@ -498,7 +548,6 @@ img.resize{
   }
 
   .project {
-    /*max-width: 1366px;*/
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
@@ -510,5 +559,6 @@ background-position: top left;
   }
 
 
+
+}*/
   /*end of @media*/
-}
